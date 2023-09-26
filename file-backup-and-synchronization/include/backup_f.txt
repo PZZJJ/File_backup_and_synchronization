@@ -1,0 +1,29 @@
+/*
+ *
+ *
+ *
+ *
+ */
+#include<bits/stdc++.h>
+struct file_{
+	int type;
+	int size;
+};
+
+bool delete_file (std::string tar);
+
+bool delete_dir (std::string tar);
+
+bool source_sync_to_tar (std::string source, std::string tar);
+
+bool two_way_synchronization (std::string dir_a, std::string dir_b);
+
+int calculate_file_size (std::string tar);
+
+int calculate_dir_size (std::string tar);
+
+bool read_tar (std::string source, std::set<std::string> f);
+
+bool copy_file (std::string source, std::string tar, std::vector<std::string> des);
+
+int comp_filetime (std::string source_file1, std::string source_file2);
